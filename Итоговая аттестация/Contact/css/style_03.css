@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;  
+}
+
+/*+++++++++MENU+++++++++*/
+.menu {
+    position: absolute;
+   width: 100%;
+    background: #333333;
+    top: 0px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 20px 50px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.menu a: hover {
+    color: fff;
+}
+
+.indicator {
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px 3px 0 0;
+    transition: .5s;
+}
+
+/*+++++++++//MENU+++++++++*/
+
+body {
+    min-height: 100vh;
+    background: url(/Contact/bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page {
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 60px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.item {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #333333;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13%;
+    margin-right: 5%;
+    justify-content: space-between;
+
+}
+
+.textb {
+    width: calc(50% - 10%);
+    height: 50px;
+    padding: 12px;
+    background-color: #333333;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px; 
+}
+
+.textarea {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background-color: #333333;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px; 
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    margin-top: 2%;
+    margin-left: auto;
+    background-color: #333333;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transform: 3s linear;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #333333;
+}
+
+@media screen and (max-width: 980px){
+    .contact-page {
+        max-width: 800px;
+    }
+
+    h2 {
+       font-size: 40px; 
+       margin-bottom: 40px;  
+    }
+}
+
+.contact-info, .contact-form{
+    flex: 100%;
+    margin-bottom: 30px;
+}
+
+.textb{
+    width: 100%;
+}

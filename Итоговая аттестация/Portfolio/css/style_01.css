@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root {
+    --dark1: #21201e;
+    --dark2: #2d2b29;
+    --brand: #ed9902;
+    --white: #ffffff;
+    --body: #989688;
+}
+
+body {
+    color: var(--body);
+    font-family: "rubik", sans-serif;
+    background-color: var(--dark1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: var(--white);
+}
+
+a {
+    transition: all 0.4s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand)
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark1);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* About */
+#about {
+    min-height: 100vx;
+    display: flex;
+    align-items: center;
+}
+
+#about h1 {
+   font-weight: 600; 
+}
+
+#about .person-is span {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: var(--white);
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+#about img {
+    border-radius: 1000px;
+    border: 5px solid var(--brand);
+}
+
+.person-img {
+    position: relative;
+    z-index: 2;
+}
+
+/* BTN */
+
+.btn {
+    padding: 13px 17px;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+}
+
+/* Intro */
+
+.intro {
+    margin-bottom: 40px;
+
+}
+
+.intro p {
+    max-width: 500px;
+}
+.text-brand {
+    color: var(--brand);
+}
+
+/* Service */
+.service {
+    background-color: var(--dark2);
+    padding: 28px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    background-color: var(--dark1);
+    margin-right: 18px;
+    border-radius: 8px;
+
+}
+
+.swrvice img {
+    height: 46px;
+
+}
+
+/* Divider */
+
+.divider {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Portfolio */
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item .iconbox {
+    background-color: var(--brand);
+    border-radius: 1000px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.portfolio-item .iconbox img {
+    height: 28px;
+}
+
+.portfolio-item: hover .iconbox {
+    opacity: 1;
+    top: 50%
+}
+
+/*Pricing*/
+
+form .form-contol {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+form .form-contol:focus {
+    box-shadow: none;
+    border-color: var(--brand);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white); 
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark2);
+}
+/* Modal */
+
+.modal h2 {
+    color: var(--dark1);
+}
